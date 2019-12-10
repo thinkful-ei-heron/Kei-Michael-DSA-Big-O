@@ -132,3 +132,17 @@ function fact(num) {
 console.log(fact(5));
 
 //O(n)
+
+//1. countSheep is O(n) because recursion is called n times and each recursive call has constant number of operations. 
+//2. powerCalculator is O(n) because recursion is called nt imes and each recursive call has constant number of operations.
+//3. Again, O(n) because recursion is called n times (str.length) and the recursive function itself is a constant number of operations.
+//4. triangular number is O(n) because recursion is called n times and the recursive call has a constant number of operations.
+//5. Same as above, O(n)
+//6. Same as above, O(n)
+//7. Exponential, as T(n) = T(n-1) + T(n-2) roughly increases by a factor of a (bit less than 2)^n each time
+//8. O(w*h)-- at worst it traverses every node *4 (well, close to four times because of edges-- basically infinite size maze = 4 times).
+//   and 4wh would break down to O(wh).
+//9. O(2*(m*n))
+//10. This is big O(n!) because it runs a recursive call a factorial number of times, the contents of each recursive call are constant.
+//11. O(n) because this is a data structure where every node is being iterated over just once. 
+//12. O(logn) because it is binary, we are running operations roughly once for each digit, which is an approximation of log time. 
