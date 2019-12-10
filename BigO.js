@@ -20,8 +20,9 @@
 // 10. This is O(n) because it is checking every incremental whole number up to n starting at 2 and then doing
 // some constant time operation (modullo) within the for loop (finding prime numbers).
 
-//11. 
-
+//11-1. After 7 recursive calls, the two largest disks are on rod A and the three smallest are on rod B. 
+//11-2. For three disks, 7 moves, for four disks, 15 moves, and for five disks, 31 moves.
+//11-3. This algorithm takes 2^n -1 moves (based on the number of disks), so it is exponential time O(2^n).
 
 function hanoi(disks, origin, destination, extra){
   if (disks === 1) {
@@ -33,10 +34,7 @@ function hanoi(disks, origin, destination, extra){
     hanoi(disks-1, extra, destination, origin);
   }
 }
-hanoi(2, 'a', 'b', 'c'); //3
-console.log('\b');
-hanoi(3, 'a', 'b', 'c'); //7
-console.log('\b');
-hanoi(4, 'a', 'b', 'c'); //15
-console.log('\b');
-hanoi(5, 'a', 'b', 'c'); //
+
+hanoi(5, 'a', 'b', 'c');
+
+
